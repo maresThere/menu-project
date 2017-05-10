@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-class Breakfast extends Component {
+class Lunch extends Component {
   render () {
     return <div>
-      <h1>Breakfast</h1>
-      <ul className='Breakfast'>
+      <h1>Lunch</h1>
+      <ul className='Lunch'>
         <li>Soft-Boiled Egg* with “soldiers”</li> <span>6.00</span>
         <li>Steel Cut Irish Oatmeal with raisins or bananas</li>
         <span>11.00</span>
@@ -27,4 +27,4 @@ Sour Cream-Hazelnut Waffles with warm berries  21.00
   }
 }
 
-export default Breakfast
+export default Lunch

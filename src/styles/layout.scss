@@ -1,0 +1,14 @@
+nav ul {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  width: 400px;
+  align-items: center;
+
+  li {
+    margin-left: 1em;
+
+    a.active {
+      font-weight: bold;
+    }
+  }
+}
