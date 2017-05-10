@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink, Route, Switch } from 'react-router-dom'
+import { query } from './api'
 // import data from '../data.json'
 
 class Menu extends React.Component {
@@ -8,23 +9,14 @@ class Menu extends React.Component {
   }
 
   componentDidMount () {
-    const API = 'https://api.graph.cool/simple/v1/cj2ic1lk3o6v60187a899o3gm'
-    window.fetch(API, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        query: `query {
-        allCategories {
-          name
-          slug
-        }
-      }`
-      })
-    }).then(r => r.json()).then(data => {
-      this.setState({
-        categories: data.data.allCategories
-      })
+    query(`allCategories {
+      name
+      slug
+  }`).then(({ data }) => {
+    this.setState({
+      categories: data.allCategories
     })
+  })
   }
   render () {
     return <div className='Menu'>
