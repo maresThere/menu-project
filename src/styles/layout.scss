@@ -1,14 +1,52 @@
-nav ul {
+.layout {
   display: grid;
-  grid-template-columns: 100px 100px 100px 100px;
-  width: 400px;
-  align-items: center;
+  grid-template-columns: 100%;
+  // justify-content: start;
+  width: 100vw;
 
-  li {
-    margin-left: 1em;
+  h1 {
+    grid-column: 2/4;
+    font-size: 2em;
+    margin: 20px auto;
+  }
 
-    a.active {
-      font-weight: bold;
+  nav ul {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    width: 400px;
+    align-items: baseline;
+    font-weight: 400;
+    font-size: 1.3em;
+
+    li {
+      margin: 0 auto;
+
+      a.active {
+        font-weight: bold;
+      }
     }
   }
+}
+
+@media screen and (min-width: 800px) {
+  .pictureHolder {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../images/stockKitchen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+    filter: brightness(90%) contrast(90%) blur(2px) grayscale(10%);
+  }
+  .layout {
+    display: grid;
+    grid-template-columns: 100%;
+    // justify-content: start;
+    width: 500px;
+
+}
 }

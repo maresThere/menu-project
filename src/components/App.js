@@ -6,6 +6,7 @@ class App extends Component {
   render () {
     return <Router>
       <div className='layout'>
+        <div className='pictureHolder'>HELLO</div>
         <nav>
           <h1><NavLink to='/'>hello MENU</NavLink></h1>
           <ul className='nav'>

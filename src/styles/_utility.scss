@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400i,700');
 $base-text-size: 16px;
-$base-font-family: sans-serif;
+$base-font-family: 'Archivo Narrow', sans-serif;
 
 * {
   list-style: none;
@@ -13,7 +14,7 @@ $base-font-family: sans-serif;
 // Apply a height to the html and body elements to that they
 // fill the height of the view by default.
 @mixin full-height {
-  height: 100%;
+  height: 100vh;
 
   body,
   #root {
