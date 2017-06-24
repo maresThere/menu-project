@@ -5,7 +5,7 @@ class contact extends Component {
     return <div>
       <h1>contact</h1>
       <ul className='contact'>
-        something
+        This is where the contact information goes
       </ul>
     </div>
   }

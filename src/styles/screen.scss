@@ -13,45 +13,118 @@ body {
   font-family: 'Archivo Narrow', sans-serif;
 }
 
-main {
-  margin: 0 auto;
+p {
+  font-family: $secondary-font-family;
 }
 
-.Menu {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
+.section {
+  width: 100%;
+  color: white;
+}
+
+ul.locations {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+li.box-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin: 0;
+}
+
+.mainDiv,
+.inner-box {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+.locationImg {
+  width: 300px;
+  height: 300px;
+}
+
+.inner-box {
+  display: flex;
+  flex-direction: column;
+  // flex: 1;
+  position: absolute;
+  background-color: rgba(170, 0, 0, 1);
+  opacity: 0;
+  transition: opacity 800ms;
+  z-index: 1;
+}
+
+.address {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: left;
+
+  h4 {
+    line-height: 0;
+    // margin: 20px 0 0;
+  }
 
   p {
-    grid-column: 1/4;
+    line-height: 1.1em;
+    margin: 2px 0 0;
   }
 
-  ul {
-    // grid-column: 1/5;
-    display: grid;
-    grid-template-rows: 50px 50px 50px 50px;
-    grid-row: 3/4;
-    width: 300px;
+  p.street {
+    font-size: 1.5em;
   }
 
-  li {
-    background-color: rgb(198,191,172);
-    padding: 5px;
-    margin: 5px;
-    width: 100%;
+  p.city {
+    font-size: 1.6em;
+  }
+
+  p.black {
+    color: black;
+    margin-top: 30px;
+    font-weight: 100;
+  }
+
+  .phone {
+    // margin: 5px 0 0;
+    color: white;
     font-size: 2em;
+    font-family: $secondary-font-family;
   }
 }
 
+.inner-box:hover {
+  opacity: 1;
+}
 
-breakfast {
-  display: grid;
-  grid-template-columns: 300px 50px;
+h3.city {
+  align-self: center;
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  font-size: 5em;
+  line-height: 100px;
+  font-weight: lighter;
+  background-color: rgba(170, 0, 0, 0.9);
+  padding: 10px;
+}
 
-  li {
-    grid-column: 1/2;
-  }
-
-  span {
-    grid-column: 2/3;
-  }
+h3.shrink {
+  align-self: center;
+  position: absolute;
+  bottom: 23%;
+  left: 15%;
+  font-size: 2.5em;
+  line-height: 100px;
+  font-weight: lighter;
+  background-color: rgba(170, 0, 0, 0.9);
+  padding: 10px;
 }
