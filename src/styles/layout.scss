@@ -2,13 +2,17 @@
 nav ul {
   display: flex;
   width: 400px;
-  align-items: center;
+  // align-items: center;
+
   font-weight: 400;
   font-size: 1.3em;
 
   li {
+    justify-content: space-around;
     margin: 0 auto;
-
+    a {
+      color: $red;
+    }
     a.active {
       font-weight: bold;
     }
@@ -17,11 +21,27 @@ nav ul {
 
 @media screen and (min-width: 500px) {
   .layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     background-image: url('../images/stockKitchen.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
 
+  h1 a {
+    color: $red;
+  }
+
+  .mainTitle {
+    font-size: 10em;
+    margin: 0 auto;
+    line-height: 100%;
+    color: $red;
+    padding: 5px 15px;
+    background-color: rgba(256, 256, 256, .7);
   }
 }

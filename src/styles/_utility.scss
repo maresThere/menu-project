@@ -4,6 +4,8 @@ $base-text-size: 16px;
 $base-font-family: 'Archivo Narrow', sans-serif;
 $secondary-font-family: 'Open Sans', sans-serif;
 
+$red: rgb(170, 0, 0);
+
 * {
   list-style: none;
   text-decoration: none;
@@ -19,7 +21,8 @@ $secondary-font-family: 'Open Sans', sans-serif;
   height: 100vh;
 
   body,
-  #root {
+  #root,
+  #root > div {
     min-height: 100%;
   }
 }
