@@ -30,14 +30,9 @@ p {
   color: white;
   background-color: black;
   display: flex;
-  
+  justify-content: center;
 }
 
-@media screen and (max-width: 1200px) {
-  ul.locations {
-    max-width: 600px;
-  }
-}
 ul.locations {
   display: flex;
   flex-direction: column;
@@ -53,7 +48,7 @@ li.box-wrap {
   align-items: center;
   position: relative;
   height: auto;
-  width: 300px;
+  max-width: 300px;
   margin: 0;
 }
 
@@ -142,4 +137,37 @@ h3.shrink {
   font-size: 2.5em;
   top: 70px;
   // line-height: 140%;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  li.box-wrap {
+    max-width: 200px;
+  }
+
+  .mainDiv,
+  .inner-box {
+    width: 200px;
+    height: 200px;
+  }
+
+  h3.city,
+  h3.shrink {
+    align-self: center;
+    position: absolute;
+    top: 30px;
+    left: 20%;
+    font-size: 2em;
+    line-height: 120%;
+    font-weight: lighter;
+    background-color: rgba(170, 0, 0, 0.6);
+    padding: 0 10px;
+  }
+
+  h3.shrink {
+    left: 10%;
+    font-size: 1.5em;
+    top: 50px;
+    // line-height: 140%;
+  }
+
 }

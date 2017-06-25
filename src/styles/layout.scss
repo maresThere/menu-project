@@ -51,3 +51,27 @@ nav ul,
     color: $red;
   }
 }
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 a {
+  color: $red;
+  background-color: rgba(256, 256, 256, .7);
+  padding: 5px 15px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.mainTitle {
+  font-size: 8em;
+  margin: 0 auto;
+  line-height: 100%;
+  color: $red;
+}
