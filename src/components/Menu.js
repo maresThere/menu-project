@@ -20,10 +20,10 @@ class Menu extends React.Component {
   }
   render () {
     return <div className='Menu'>
-      <h2>We Have So Many Menus</h2>
-      <p>Our Menus are the greatest. They are so great, ya head will spin.</p>
+      <h2 className='mainTitle'>MENU</h2>
+
       <section className='categories'>
-        <ul>
+        <ul className='mealTitle'>
           {this.state.categories.map(({ slug, name }, i) => (
             <li key={i}>
               <NavLink to={`/menu/${slug}`}>{name}</NavLink>
@@ -40,21 +40,53 @@ class Menu extends React.Component {
     </div>
   }
 }
-const menuSection = ({ match }) => {
-  const category = data.menu.find(c => c.slug === match.params.slug)
-  return <section>
-    <h3>{category.name}</h3>
-    <table>
-      <tbody>
-        {category.items.map((item, i) =>
-          <tr key={i}>
-            <th>{item.name}</th>
-            <td>{item.description}</td>
-            <td>{item.price / 100}</td>
-          </tr>
+
+class menuSection extends React.Component {
+  state = {
+    name: 'Loading...',
+    items: []
+  }
+  componentDidMount () {
+    this.load(this.props.match.params.slug)
+  }
+
+  componentWillReceiveProps (nextProps) {
+    if (nextProps.match.params.slug !== this.props.match.params.slug) {
+      this.setState({ name: 'Loading...', items: [] })
+      this.load(nextProps.match.params.slug)
+    }
+  }
+
+  load (slug) {
+    query(`Category(slug: "${slug}") {
+      name
+      slug
+      items {
+        name
+        price
+        description
+      }
+    }`).then(({ data }) => {
+      const { name, items } = data.Category
+      this.setState({ name, items })
+    })
+  }
+
+  render () {
+    return <section>
+      <h3>{this.state.name}</h3>
+      <table>
+        <tbody>
+          {this.state.items.map((item, i) =>
+            <tr key={i}>
+              <th>{item.name}</th>
+              <td>{item.description}</td>
+              <td>{item.price / 100}</td>
+            </tr>
       )}
-      </tbody>
-    </table>
-  </section>
+        </tbody>
+      </table>
+    </section>
+  }
 }
 export default Menu

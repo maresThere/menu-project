@@ -17,15 +17,32 @@ p {
   font-family: $secondary-font-family;
 }
 
+.categories {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .section {
   width: 100%;
   color: white;
+  background-color: black;
+  display: flex;
+  
 }
 
+@media screen and (max-width: 1200px) {
+  ul.locations {
+    max-width: 600px;
+  }
+}
 ul.locations {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   padding: 0;
   margin: 0;
 }
@@ -36,7 +53,7 @@ li.box-wrap {
   align-items: center;
   position: relative;
   height: auto;
-  max-width: 300px;
+  width: 300px;
   margin: 0;
 }
 
