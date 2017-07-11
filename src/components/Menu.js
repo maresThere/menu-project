@@ -58,7 +58,7 @@ class menuSection extends React.Component {
   }
 
   load (slug) {
-    query(`Category(slug: "${slug}") {
+    query(`allCategories(filter: { slug: "${slug}" }, first: 1) {
       name
       slug
       items {
@@ -67,7 +67,7 @@ class menuSection extends React.Component {
         description
       }
     }`).then(({ data }) => {
-      const { name, items } = data.Category
+      const { name, items } = data.allCategories[0]
       this.setState({ name, items })
     })
   }

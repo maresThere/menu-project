@@ -34,6 +34,7 @@ p {
 }
 
 ul.locations {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,7 +49,7 @@ li.box-wrap {
   align-items: center;
   position: relative;
   height: auto;
-  max-width: 300px;
+  max-width: 100%;
   margin: 0;
 }
 
@@ -169,5 +170,4 @@ h3.shrink {
     top: 50px;
     // line-height: 140%;
   }
-
 }
