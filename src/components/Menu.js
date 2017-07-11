@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavLink, Route, Switch } from 'react-router-dom'
 import { query } from './api'
-// import data from '../data.json'
 
 class Menu extends React.Component {
   state = {
@@ -73,15 +72,15 @@ class menuSection extends React.Component {
   }
 
   render () {
-    return <section>
+    return <section className='menuItems'>
       <h3>{this.state.name}</h3>
       <table>
         <tbody>
           {this.state.items.map((item, i) =>
             <tr key={i}>
               <th>{item.name}</th>
-              <td>{item.description}</td>
-              <td>{item.price / 100}</td>
+              <td className='desc'>{item.description}</td>
+              <td className='price'>{item.price / 100}</td>
             </tr>
       )}
         </tbody>

@@ -16,11 +16,11 @@ class Locations extends Component {
           </div>
           <div className='inner-box'>
             <div className='address'>
-              <h4>HELLO MIAMI</h4>
+              <h4>DINE MIAMI</h4>
               <p className='street'>5555 Ocean Blvd</p>
               <p className='city'>Miami, Fl 33333</p>
               <p className='black'>Reservations</p>
-              <a href='tel:555-555-5555' className='phone'>555.555.5555</a>
+              <a href='tel:305-555-5555' className='phone'>305.555.5555</a>
             </div>
           </div>
         </li>
@@ -31,11 +31,11 @@ class Locations extends Component {
           </div>
           <div className='inner-box'>
             <div className='address'>
-              <h4>HELLO TAMPA</h4>
-              <p className='street'>5555 Ocean Blvd</p>
-              <p className='city'>Tampa, Fl 33333</p>
+              <h4>DINE TAMPA</h4>
+              <p className='street'>910 Kennedy Blvd</p>
+              <p className='city'>Tampa, Fl 33607</p>
               <p className='black'>Reservations</p>
-              <a href='tel:555-555-5555' className='phone'>555.555.5555</a>
+              <a href='tel:813-555-5555' className='phone'>813.555.5555</a>
             </div>
           </div>
         </li>
@@ -46,11 +46,11 @@ class Locations extends Component {
           </div>
           <div className='inner-box'>
             <div className='address'>
-              <h4>HELLO WINTER PARK</h4>
-              <p className='street'>5555 Ocean Blvd</p>
+              <h4>DINE WINTER PARK</h4>
+              <p className='street'>5555 Main street</p>
               <p className='city '>Winter Park, Fl 33333</p>
               <p className='black'>Reservations</p>
-              <a href='tel:555-555-5555' className='phone'>555.555.5555</a>
+              <a href='tel:407-555-5555' className='phone'>407.555.5555</a>
             </div>
           </div>
         </li>
@@ -61,11 +61,11 @@ class Locations extends Component {
           </div>
           <div className='inner-box'>
             <div className='address'>
-              <h4>HELLO JACKSONVILLE</h4>
-              <p className='street'>5555 Ocean Blvd</p>
-              <p className='city'>Jax Beach, Fl 33333</p>
+              <h4>DINE JACKSONVILLE</h4>
+              <p className='street'>123 1st street</p>
+              <p className='city'>Jax Beach, Fl 32805</p>
               <p className='black'>Reservations</p>
-              <a href='tel:555-555-5555' className='phone'>555.555.5555</a>
+              <a href='tel:904-555-5555' className='phone'>904.555.5555</a>
             </div>
           </div>
         </li>

@@ -17,6 +17,10 @@ nav ul,
 
     a.active {
       font-weight: bold;
+      color: white;
+      background-color:
+      $red;
+      padding: 5px;
     }
   }
 }
