@@ -72,7 +72,7 @@ class menuSection extends React.Component {
   }
 
   render () {
-    return <section className='menuItems'>
+    return <section id='menu' className='menuItems'>
       <h3>{this.state.name}</h3>
       <table>
         <tbody>

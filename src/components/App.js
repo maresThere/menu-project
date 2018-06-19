@@ -1,14 +1,18 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
-import { Home, Menu, Contact, Locations, Location } from '.'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Nav, Home, Menu, Location } from '.'
 
 class App extends Component {
   render () {
     return <Router>
       <div>
-        <Home />
-        <Locations />
-        <Menu />
+        <Nav />
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/menu' component={Menu} />
+          <Route path='/location' component={Location} />
+
+        </Switch>
       </div>
     </Router>
   }

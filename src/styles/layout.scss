@@ -17,11 +17,15 @@ nav ul,
 
     a.active {
       font-weight: bold;
-      color: white;
-      background-color:
-      $red;
-      padding: 5px;
     }
+  }
+}
+
+.mealTitle {
+  a.active {
+    color: white;
+    background-color: $red;
+    padding: 5px;
   }
 }
 
@@ -31,7 +35,7 @@ nav ul,
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100px;
     background-image: url('../images/stockKitchen.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -40,7 +44,7 @@ nav ul,
 
   h1 a {
     color: $red;
-    background-color: rgba(256, 256, 256, .7);
+    background-color: rgba(256, 256, 256, 0.7);
     padding: 5px 15px;
   }
 
@@ -65,7 +69,7 @@ nav ul,
 
 h1 a {
   color: $red;
-  background-color: rgba(256, 256, 256, .7);
+  background-color: rgba(256, 256, 256, 0.7);
   padding: 5px 15px;
 }
 

@@ -9,10 +9,18 @@
     font-size: 1.3em;
     text-align: left;
   }
+
+  .price {
+    font-size: 1.1em;
+  }
+
+  .price::before {
+    content: "$";
+  }
 }
 
 table {
   width: 500px;
   margin-bottom: 50px;
-  
+
 }

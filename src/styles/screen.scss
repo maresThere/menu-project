@@ -39,7 +39,7 @@ ul.locations {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-flow: row wrap;
+  // flex-flow: row wrap;
   padding: 0;
   margin: 0;
 }
@@ -56,65 +56,37 @@ li.box-wrap {
 
 .mainDiv,
 .inner-box {
+  position: relative;
   width: 300px;
   height: 300px;
-  text-align: center;
+  // text-align: center;
   display: flex;
+  justify-content: center;
+  color: white;
 }
 
 .locationImg {
   width: 100%;
 }
 
+.mainDiv {
+  background-color: rgba(170, 0, 0, 1);
+}
+
 .inner-box {
   display: flex;
-  flex-direction: column;
-  // flex: 1;
   position: absolute;
-  background-color: rgba(170, 0, 0, 1);
   opacity: 0;
   transition: opacity 800ms;
   z-index: 1;
 }
 
 .address {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: center;
+  // align-self: center;
   text-align: left;
-
-  h4 {
-    line-height: 0;
-    // margin: 20px 0 0;
-  }
-
-  p {
-    line-height: 1.1em;
-    margin: 2px 0 0;
-  }
-
-  p.street {
-    font-size: 1.5em;
-  }
-
-  p.city {
-    font-size: 1.6em;
-  }
-
-  p.black {
-    color: black;
-    margin-top: 30px;
-    font-weight: 100;
-  }
-
-  .phone {
-    // margin: 5px 0 0;
-    color: white;
-    font-size: 2em;
-    font-family: $secondary-font-family;
-  }
 }
 
 .inner-box:hover {
@@ -122,53 +94,9 @@ li.box-wrap {
 }
 
 h3.city,
-h3.shrink {
+h3 {
   align-self: center;
-  position: absolute;
-  top: 50px;
-  left: 15%;
   font-size: 4em;
-  line-height: 120%;
   font-weight: lighter;
-  background-color: rgba(170, 0, 0, 0.6);
-  padding: 0 10px;
-}
 
-h3.shrink {
-  left: 5%;
-  font-size: 2.5em;
-  top: 70px;
-  // line-height: 140%;
-}
-
-@media screen and (min-width: 800px) and (max-width: 1200px) {
-  li.box-wrap {
-    max-width: 200px;
-  }
-
-  .mainDiv,
-  .inner-box {
-    width: 200px;
-    height: 200px;
-  }
-
-  h3.city,
-  h3.shrink {
-    align-self: center;
-    position: absolute;
-    top: 30px;
-    left: 20%;
-    font-size: 2em;
-    line-height: 120%;
-    font-weight: lighter;
-    background-color: rgba(170, 0, 0, 0.6);
-    padding: 0 10px;
-  }
-
-  h3.shrink {
-    left: 10%;
-    font-size: 1.5em;
-    top: 50px;
-    // line-height: 140%;
-  }
 }
