@@ -5,6 +5,7 @@ nav ul,
   width: 400px;
   font-size: 1.3em;
 
+
   @include reset-list;
 
   li {
@@ -13,6 +14,8 @@ nav ul,
 
     a {
       color: $red;
+      background-color: rgba(256, 256, 256, 0.7);
+      padding: 5px 15px;
     }
 
     a.active {
@@ -33,23 +36,14 @@ nav ul,
   .layout {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 100%;
     background-image: url('../images/stockKitchen.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  h1 a {
-    color: $red;
-    background-color: rgba(256, 256, 256, 0.7);
-    padding: 5px 15px;
-  }
-
-  h2 {
-    text-align: center;
+    // position: fixed;
   }
 
   .mainTitle {
@@ -63,8 +57,8 @@ nav ul,
 .layout {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  align-items: stretch;
 }
 
 h1 a {

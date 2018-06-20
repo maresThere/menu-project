@@ -2,9 +2,9 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const Home = () => (
-  <div className='layout'>
+  <div className=''>
     <h1 className='mainTitle'>
-      <NavLink to='/'>x</NavLink>
+      <NavLink to='/'>DINE</NavLink>
     </h1>
   </div>
 )

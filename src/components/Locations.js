@@ -6,7 +6,6 @@ class Locations extends Component {
     return (
       <li className='box-wrap'>
         <div className='mainDiv'>
-
           <h3 className='city'>{city}</h3>
         </div>
         <div className='inner-box'>
@@ -14,9 +13,9 @@ class Locations extends Component {
         </div>
         <div className='address'>
           <h4>DINE {city}</h4>
-          <p className='street'>{street}</p>
-          <p className='city'>{city}, {zip}</p>
-          <p className='black'>Reservations</p>
+          <span className='street'>{street}</span>
+          <span className='city'>{city}, {zip}</span>
+          <span className='black'>Reservations</span>
         </div>
       </li>
     )

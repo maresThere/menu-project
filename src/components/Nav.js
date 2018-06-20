@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const Nav = () => (
-  <div className='layout'>
+  <div className=''>
     <nav>
       <ul className='nav'>
         <li>

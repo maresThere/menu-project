@@ -20,7 +20,7 @@ const items = [
     phone: '555-5555'
   },
   { image: '/images/jax.jpg',
-    city: 'JACKSONVILLE',
+    city: 'JAX',
     street: '789 jax blvd',
     zip: '33443',
     phone: '555-5555'
