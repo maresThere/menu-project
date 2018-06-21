@@ -19,7 +19,7 @@ class Menu extends React.Component {
   }
   render () {
     return <div className='Menu'>
-      <h2 className='mainTitle'>MENU</h2>
+      <h1>MENU</h1>
 
       <section className='categories'>
         <ul className='mealTitle'>

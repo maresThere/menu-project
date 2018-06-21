@@ -1,8 +1,10 @@
 .menuItems {
-  margin-bottom: 100px;
+  width: 120%;
+  color: white;
 
   h3 {
-    color: transparent;
+    text-align: center;
+    text-shadow: 3px 3px 3px #222;
   }
 
   th {
@@ -30,14 +32,9 @@
 table {
   width: 500px;
   margin-bottom: 50px;
-}
-
-.section {
-  width: 100%;
-  color: white;
-  background-color: black;
-  display: flex;
-  justify-content: center;
+  text-shadow: 3px 3px 2px #222;
+  font-family: $secondary-font-family;
+  font-size: .8em;
 }
 
 .categories {

@@ -5,7 +5,7 @@ import { Nav, Home, Menu, Location, Contact } from '.'
 class App extends Component {
   render () {
     return <Router>
-      <div className='layout'>
+      <div className='layout bgfade'>
         <Nav />
         <Switch>
           <Route exact path='/' component={Home} />

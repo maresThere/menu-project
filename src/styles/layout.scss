@@ -5,7 +5,6 @@ nav ul,
   width: 400px;
   font-size: 1.3em;
 
-
   @include reset-list;
 
   li {
@@ -30,21 +29,4 @@ nav ul,
   // justify-content: center;
   align-items: center;
   height: 100vh;
-}
-
-h1 a {
-  color: $red;
-  background-color: rgba(256, 256, 256, 0.7);
-  padding: 5px 15px;
-}
-
-h2 {
-  text-align: center;
-}
-
-.mainTitle {
-  font-size: 8em;
-  margin: 0 auto;
-  line-height: 100%;
-  color: $red;
 }
