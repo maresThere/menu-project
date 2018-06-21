@@ -24,41 +24,12 @@ nav ul,
   }
 }
 
-.mealTitle {
-  a.active {
-    color: white;
-    background-color: $red;
-    padding: 5px;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  .layout {
-    display: flex;
-    flex-direction: column;
-    // justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-image: url('../images/stockKitchen.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    // position: fixed;
-  }
-
-  .mainTitle {
-    font-size: 10em;
-    margin: 0 auto;
-    line-height: 100%;
-    color: $red;
-  }
-}
-
 .layout {
   display: flex;
   flex-direction: column;
   // justify-content: center;
-  align-items: stretch;
+  align-items: center;
+  height: 100vh;
 }
 
 h1 a {

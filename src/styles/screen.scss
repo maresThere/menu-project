@@ -6,6 +6,9 @@ $base-font-family: sans-serif;
 
 html {
   @include full-height;
+
+  background: url('../images/stockKitchen.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 body {
@@ -16,22 +19,6 @@ body {
 
 p {
   font-family: $secondary-font-family;
-}
-
-.categories {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.section {
-  width: 100%;
-  color: white;
-  background-color: black;
-  display: flex;
-  justify-content: center;
 }
 
 ul.locations {

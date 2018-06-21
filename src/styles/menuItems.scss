@@ -19,8 +19,31 @@
   }
 }
 
+.mealTitle {
+  a.active {
+    color: white;
+    background-color: $red;
+    padding: 5px;
+  }
+}
+
 table {
   width: 500px;
   margin-bottom: 50px;
+}
 
+.section {
+  width: 100%;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.categories {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
