@@ -74,17 +74,15 @@ class menuSection extends React.Component {
   render () {
     return <section id='menu' className='menuItems'>
       <h3>{this.state.name}</h3>
-      <table>
-        <tbody>
-          {this.state.items.map((item, i) =>
-            <tr key={i}>
-              <th>{item.name}</th>
-              <td className='desc'>{item.description}</td>
-              <td className='price'>{item.price / 100}</td>
-            </tr>
+      <div className='wrapper'>
+        {this.state.items.map((item, i) =>
+          <div className='row' key={i}>
+            <h4 className='box'>{item.name}</h4>
+            <div className='box desc'>{item.description}</div>
+            <div className='box price'>{item.price / 100}</div>
+          </div>
       )}
-        </tbody>
-      </table>
+      </div>
     </section>
   }
 }

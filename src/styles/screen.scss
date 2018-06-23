@@ -12,7 +12,8 @@ html {
 }
 
 .bgfade {
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100vh;
 }
 
 body {
@@ -24,9 +25,10 @@ body {
 h1 {
   color: $red;
   // background-color: rgba(256, 256, 256, 0.7);
-  padding: 5px 15px;
+  // padding: 5px 15px;
   text-align: center;
-  font-size: 8em;
+  font-size: 6em;
+  margin: 0;
 }
 
 p {
