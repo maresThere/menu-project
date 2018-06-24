@@ -1,29 +1,32 @@
 const items = [
   {
-
+    title: 'RELAX',
     image: '/images/miami.jpg',
     city: 'Miami',
-    street: '1234 miami street',
+    street: '1234 Miami Street',
     zip: '33443',
-    phone: '555-5555'
+    phone: '305.555.4321'
   },
-  { image: '/images/tampa.jpg',
+  { title: 'REFLECT',
+    image: '/images/tampa.jpg',
     city: 'Tampa',
-    street: '4321 tampa drive',
+    street: '4321 Tampa Drive',
     zip: '33443',
-    phone: '555-5555'
+    phone: '813.555.9871'
   },
-  { image: '/images/winterPark.jpg',
+  { title: 'ENJOY',
+    image: '/images/winterPark.jpg',
     city: 'Winter Park',
-    street: '987 park place',
+    street: '987 Park Place',
     zip: '33443',
-    phone: '555-5555'
+    phone: '407.555.6541'
   },
-  { image: '/images/jax.jpg',
-    city: 'JAX',
-    street: '789 jax blvd',
+  { title: 'DINE',
+    image: '/images/jax.jpg',
+    city: 'Jacksonville',
+    street: '789 Jax Avenue',
     zip: '33443',
-    phone: '555-5555'
+    phone: '904.555.4576'
   }
 ]
 export default items

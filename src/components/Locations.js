@@ -2,20 +2,20 @@ import React, { Component } from 'react'
 
 class Locations extends Component {
   render () {
-    const { image, city, street, zip } = this.props.details
+    const { title, image, city, street, phone, zip } = this.props.details
     return (
       <li className='box-wrap'>
-        <div className='mainDiv'>
-          <h3 className='city'>{city}</h3>
+        <div className='img-box'>
+          <h3 className='title'>{title}</h3>
         </div>
         <div className='inner-box'>
           <img src={image} className='locationImg' />
         </div>
-        <div className='address'>
-          <h4>DINE {city}</h4>
-          <span className='street'>{street}</span>
-          <span className='city'>{city}, {zip}</span>
-          <span className='black'>Reservations</span>
+        <div className='address-box'>
+          <h4>{city}</h4>
+          <span className='street'>{street} <br />
+            {city}, {zip}</span>
+          <span className='phone'>{phone}</span>
         </div>
       </li>
     )

@@ -31,7 +31,7 @@ class Menu extends React.Component {
         </ul>
         <Switch>
           <Route path='/menu' exact>
-            <h2>This is the best</h2>
+            <h2>Tap the meal you're hungry for</h2>
           </Route>
           <Route path='/menu/:slug' component={menuSection} />
         </Switch>
